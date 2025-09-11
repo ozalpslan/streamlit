@@ -9,66 +9,98 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
-# Custom CSS for better styling
+# Custom CSS for professional styling
 st.markdown("""
 <style>
     .main-header {
         text-align: center;
-        color: #1f77b4;
+        color: #2c3e50;
         font-size: 2.5rem;
         margin-bottom: 1rem;
+        font-weight: 700;
     }
     .sub-header {
         text-align: center;
-        color: #666;
+        color: #7f8c8d;
         font-size: 1.2rem;
         margin-bottom: 2rem;
+        font-weight: 400;
     }
     .navbar {
         display: flex;
         justify-content: center;
-        background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+        background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
         padding: 15px;
-        border-radius: 15px;
+        border-radius: 12px;
         margin-bottom: 30px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 15px rgba(44, 62, 80, 0.2);
     }
     .navbar a {
         color: white;
         text-decoration: none;
-        padding: 10px 20px;
-        margin: 0 10px;
+        padding: 12px 24px;
+        margin: 0 8px;
         border-radius: 8px;
         font-weight: 500;
         transition: all 0.3s ease;
+        border: 1px solid transparent;
     }
     .navbar a:hover {
-        background-color: rgba(255, 255, 255, 0.2);
-        transform: translateY(-2px);
+        background-color: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        transform: translateY(-1px);
     }
     .project-card {
         background: white;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        padding: 24px;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
         margin-bottom: 20px;
-        border-left: 4px solid #1f77b4;
+        border-left: 4px solid #3498db;
+        transition: all 0.3s ease;
+    }
+    .project-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
     }
     .skill-tag {
         display: inline-block;
-        background: #e8f4fd;
-        color: #1f77b4;
-        padding: 5px 10px;
-        border-radius: 15px;
-        margin: 2px;
-        font-size: 0.9rem;
+        background: #ecf0f1;
+        color: #2c3e50;
+        padding: 6px 12px;
+        border-radius: 20px;
+        margin: 3px;
+        font-size: 0.85rem;
+        font-weight: 500;
+        border: 1px solid #bdc3c7;
     }
     .contact-info {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
         color: white;
-        padding: 20px;
-        border-radius: 10px;
+        padding: 30px;
+        border-radius: 12px;
         text-align: center;
+        box-shadow: 0 4px 15px rgba(44, 62, 80, 0.2);
+    }
+    .section-header {
+        color: #2c3e50;
+        border-bottom: 2px solid #3498db;
+        padding-bottom: 8px;
+        margin-bottom: 20px;
+    }
+    .experience-item {
+        background: #f8f9fa;
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 15px;
+        border-left: 3px solid #3498db;
+    }
+    .cert-item {
+        background: #f8f9fa;
+        padding: 15px;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        border-left: 3px solid #27ae60;
     }
 </style>
 """, unsafe_allow_html=True)
@@ -90,7 +122,7 @@ st.markdown("""
 
 # About Me Section
 st.markdown('<div id="about-me"></div>', unsafe_allow_html=True)
-st.header("🎯 About Me")
+st.markdown('<h2 class="section-header">🎯 About Me</h2>', unsafe_allow_html=True)
 
 col1, col2 = st.columns([2, 1])
 
@@ -135,7 +167,7 @@ st.markdown("**Speaking Languages:** Turkish (Native), English B2, German (A1)")
 
 # Projects Section
 st.markdown('<div id="projects"></div>', unsafe_allow_html=True)
-st.header("🚀 Featured Projects")
+st.markdown('<h2 class="section-header">🚀 Featured Projects</h2>', unsafe_allow_html=True)
 
 project_data = [
     {
@@ -188,33 +220,53 @@ for project in project_data:
 
 # Experience & Education Section
 st.markdown('<div id="experience-education"></div>', unsafe_allow_html=True)
-st.header("💼 Experience & Education")
+st.markdown('<h2 class="section-header">💼 Experience & Education</h2>', unsafe_allow_html=True)
 
 col1, col2 = st.columns(2)
 
 with col1:
     st.subheader("🏢 Internships")
     
-    st.markdown("**QNB Finansbank Intern** (07/2024 - 08/2024)")
-    st.write("• C# programming and web development focus")
-    st.write("• Application design and software solutions")
-    st.write("• Financial technology insights")
+    st.markdown("""
+    <div class="experience-item">
+        <h4>QNB Finansbank Intern</h4>
+        <p><em>07/2024 - 08/2024</em></p>
+        <ul>
+            <li>C# programming and web development focus</li>
+            <li>Application design and software solutions</li>
+            <li>Financial technology insights</li>
+        </ul>
+    </div>
+    """, unsafe_allow_html=True)
     
-    st.markdown("**Denizbank Denizasiri Intern** (02/2024 - 03/2024)")
-    st.write("• Data Science and AI fundamentals")
-    st.write("• Financial sector technology applications")
-    st.write("• Analytical thinking development")
+    st.markdown("""
+    <div class="experience-item">
+        <h4>Denizbank Denizasiri Intern</h4>
+        <p><em>02/2024 - 03/2024</em></p>
+        <ul>
+            <li>Data Science and AI fundamentals</li>
+            <li>Financial sector technology applications</li>
+            <li>Analytical thinking development</li>
+        </ul>
+    </div>
+    """, unsafe_allow_html=True)
 
 with col2:
     st.subheader("🎓 Education")
-    st.markdown("**Computer Science 3rd Grade**")
-    st.write("• CGPA: 3.38")
-    st.write("• Istanbul University, Istanbul/Turkey")
-    st.write("• Focus on Machine Learning and Data Engineering")
+    st.markdown("""
+    <div class="experience-item">
+        <h4>Computer Science 3rd Grade</h4>
+        <ul>
+            <li>CGPA: 3.38</li>
+            <li>Istanbul University, Istanbul/Turkey</li>
+            <li>Focus on Machine Learning and Data Engineering</li>
+        </ul>
+    </div>
+    """, unsafe_allow_html=True)
 
 # Certifications Section
 st.markdown('<div id="certifications"></div>', unsafe_allow_html=True)
-st.header("🏆 Certifications")
+st.markdown('<h2 class="section-header">🏆 Certifications</h2>', unsafe_allow_html=True)
 
 certifications = [
     ("AWS Certified Cloud Practitioner", "2025", "☁️"),
@@ -228,14 +280,20 @@ certifications = [
 
 col1, col2 = st.columns(2)
 for i, (cert, year, icon) in enumerate(certifications):
+    cert_html = f"""
+    <div class="cert-item">
+        <span style="font-size: 1.2em;">{icon}</span>
+        <strong>{cert}</strong> ({year})
+    </div>
+    """
     if i % 2 == 0:
-        col1.markdown(f"{icon} **{cert}** ({year})")
+        col1.markdown(cert_html, unsafe_allow_html=True)
     else:
-        col2.markdown(f"{icon} **{cert}** ({year})")
+        col2.markdown(cert_html, unsafe_allow_html=True)
 
 # Contact Section
 st.markdown('<div id="contact"></div>', unsafe_allow_html=True)
-st.header("📞 Contact")
+st.markdown('<h2 class="section-header">📞 Contact</h2>', unsafe_allow_html=True)
 
 st.markdown("""
 <div class="contact-info">
@@ -246,4 +304,5 @@ st.markdown("""
     <p>🐙 <strong>GitHub:</strong> <a href="https://github.com/ozalpslan" target="_blank" style="color: white;">github.com/ozalpslan</a></p>
 </div>
 """, unsafe_allow_html=True)
+
 
