@@ -174,7 +174,7 @@ project_data = [
         "name": "🏭 Yildiz Technical University ML Datathon 2025",
         "description": "Built a machine learning model using real factory machine data to predict maintenance needs and failures. Applied data preprocessing, feature engineering, and model evaluation techniques to improve prediction accuracy.",
         "technologies": ["Machine Learning", "Data Preprocessing", "Feature Engineering", "Predictive Maintenance"],
-        "github_link": "#"
+        "github_link": "https://github.com/ozalpslan/Katildigim-Yarismalar/blob/main/DATATHON.ipynb"
     },
     {
         "name": "🖼️ Istanbul Technical University Deep Learning Datathon 2025",
@@ -186,7 +186,7 @@ project_data = [
         "name": "🏆 Kaggle OBSS AI Intern Deep Learning Datathon 2025",
         "description": "Built an image classification model using Kaggle datasets. Utilized pre-trained models and transfer learning to improve classification accuracy.",
         "technologies": ["Deep Learning", "Transfer Learning", "Kaggle", "Image Classification"],
-        "github_link": "#"
+        "github_link": "https://github.com/ozalpslan/Katildigim-Yarismalar/blob/main/OBSS%20Internship%20Datathon.ipynb"
     },
     {
         "name": "💰 Derin-ogrenme-ile-kredi-riski-analizi",
