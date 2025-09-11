@@ -205,13 +205,13 @@ project_data = [
         "description": "This interactive portfolio website built with Streamlit to showcase projects and professional experience.",
         "technologies": ["Streamlit", "Python", "Web Development"],
         "github_link": "https://github.com/ozalpslan/streamlit"
-    }
+    },
     {
         "name": "MnistTorchVision",
         "description": "Built a handwritten digit classification model on the MNIST dataset using PyTorch and TorchVision.",
         "technologies": ["Pytorch", "CNN", "Deep Learning"],
         "github_link": "https://github.com/ozalpslan/MnistTorchVision"
-    }
+    },
     {
         "name": "HousePricingPredict",
         "description": "Developed a machine learning model to predict house prices based on key property features.",
