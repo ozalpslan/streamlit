@@ -192,7 +192,7 @@ project_data = [
         "name": "💰 Derin-ogrenme-ile-kredi-riski-analizi",
         "description": "Deep learning based credit risk analysis project implementing advanced neural networks for financial risk assessment.",
         "technologies": ["Deep Learning", "Financial Analysis", "Risk Assessment"],
-        "github_link": "https://github.com/ozalpslan/Derin-ogrenme-ile-kredi-riski-analizi"
+        "github_link": "https://github.com/ozalpslan/Derin-ogrenme-ile-kredi-riski-analizi/blob/main/calismaloan.ipynb"
     },
     {
         "name": "🐍 Akbank Python Bootcamp Project",
