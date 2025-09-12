@@ -108,11 +108,7 @@ st.markdown("""
 # Header
 st.markdown('<h1 class="main-header">Alper Ozarslan</h1>', unsafe_allow_html=True)
 st.markdown("<p class=\"sub-header\">Machine Learning Student with MLOps Knowledge</p>", unsafe_allow_html=True)
-<div style="text-align: center; margin-top: 20px;">
-    <img src="data:image/png;base64,{base64_image}" alt="AWS Certified Cloud Practitioner" style="width: 150px; height: auto; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
-</div>
 
-# Navigation
 # Function to encode image to base64
 def get_image_as_base64(path):
     with open(path, "rb") as f:
@@ -120,6 +116,14 @@ def get_image_as_base64(path):
 
 # Encode the image
 base64_image = get_image_as_base64("/home/ubuntu/upload/search_images/h9NPnB56ju37.png")
+
+st.markdown(f"""
+<div style="text-align: center; margin-top: 20px;">
+    <img src="data:image/png;base64,{base64_image}" alt="AWS Certified Cloud Practitioner" style="width: 150px; height: auto; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+</div>
+""", unsafe_allow_html=True)
+
+# Navigation
 st.markdown("""
 <div class="navbar">
     <a href="#about-me">About Me</a>
