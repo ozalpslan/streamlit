@@ -107,7 +107,7 @@ st.markdown("""
 
 # Header
 st.markdown('<h1 class="main-header">Alper Ozarslan</h1>', unsafe_allow_html=True)
-st.markdown('<p class="sub-header">Machine Learning Student with MLOps Knowledge</p>', unsafe_allow_html=True)
+st.markdown('<p class="sub-header">Machine Learning Student with MLOps and Cloud Knowledge</p>', unsafe_allow_html=True)
 
 # Navigation
 st.markdown("""
