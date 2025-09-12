@@ -129,8 +129,8 @@ col1, col2 = st.columns([2, 1])
 with col1:
     st.write("""
     3rd-year Computer Science student with practical experience in machine learning, deep learning, and data engineering.
-    Skilled in Python, SQL, AWS, and .NET, with hands-on work from datathons, internships, and certification programs.
-    Interested in projects involving AI, automation, and cloud-based solutions.
+    Skilled in Python, SQL, AWS (AWS Certified Cloud Practitioner), and .NET, with hands-on work from datathons, internships, and certification programs.
+    Interested in projects involving AI, automation, and cloud-based solutions, with a strong foundational understanding of AWS Cloud services.
     """)
 
 with col2:
@@ -159,7 +159,7 @@ with col2:
 
 with col3:
     st.markdown("**Tools & Technologies**")
-    tools = ["Git", "Docker", "AWS", "MySQL", "PostgreSQL", "Linux"]
+    tools = ["Git", "Docker", "AWS Cloud Services", "MySQL", "PostgreSQL", "Linux"]
     for tool in tools:
         st.markdown(f'<span class="skill-tag">{tool}</span>', unsafe_allow_html=True)
 
@@ -217,6 +217,12 @@ project_data = [
         "description": "Developed a machine learning model to predict house prices based on key property features.",
         "technologies": ["Machine Learning", "Regression", "Scikit-Learning"],
         "github_link": "https://github.com/ozalpslan/HousePricingPredict"
+    },
+    {
+        "name": "☁️ AWS Cloud Practitioner Project (Placeholder)",
+        "description": "Designed and implemented a basic cloud solution on AWS, demonstrating foundational knowledge of AWS services like EC2, S3, and VPC. Focused on cost-effective and scalable architecture principles.",
+        "technologies": ["AWS", "Cloud Computing", "EC2", "S3", "VPC"],
+        "github_link": "#"
     }
 ]
 
@@ -316,5 +322,3 @@ st.markdown("""
     <p>🐙 <strong>GitHub:</strong> <a href="https://github.com/ozalpslan" target="_blank" style="color: white;">github.com/ozalpslan</a></p>
 </div>
 """, unsafe_allow_html=True)
-
-
