@@ -107,19 +107,9 @@ st.markdown("""
 
 # Header
 st.markdown('<h1 class="main-header">Alper Ozarslan</h1>', unsafe_allow_html=True)
-st.markdown("<p class=\"sub-header\">Machine Learning Student with MLOps Knowledge</p>", unsafe_allow_html=True)
-<div style="text-align: center; margin-top: 20px;">
-    <img src="data:image/png;base64,{base64_image}" alt="AWS Certified Cloud Practitioner" style="width: 150px; height: auto; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
-</div>
+st.markdown('<p class="sub-header">Machine Learning Student with MLOps Knowledge</p>', unsafe_allow_html=True)
 
 # Navigation
-# Function to encode image to base64
-def get_image_as_base64(path):
-    with open(path, "rb") as f:
-        return base64.b64encode(f.read()).decode()
-
-# Encode the image
-base64_image = get_image_as_base64("/home/ubuntu/upload/search_images/h9NPnB56ju37.png")
 st.markdown("""
 <div class="navbar">
     <a href="#about-me">About Me</a>
@@ -227,13 +217,8 @@ project_data = [
         "description": "Developed a machine learning model to predict house prices based on key property features.",
         "technologies": ["Machine Learning", "Regression", "Scikit-Learning"],
         "github_link": "https://github.com/ozalpslan/HousePricingPredict"
-    },
-    {
-        "name": "☁️ AWS Cloud Practitioner Project (Placeholder)",
-        "description": "Designed and implemented a basic cloud solution on AWS, demonstrating foundational knowledge of AWS services like EC2, S3, and VPC. Focused on cost-effective and scalable architecture principles.",
-        "technologies": ["AWS", "Cloud Computing", "EC2", "S3", "VPC"],
-        "github_link": "#"
     }
+   
 ]
 
 for project in project_data:
