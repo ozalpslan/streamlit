@@ -217,13 +217,8 @@ project_data = [
         "description": "Developed a machine learning model to predict house prices based on key property features.",
         "technologies": ["Machine Learning", "Regression", "Scikit-Learning"],
         "github_link": "https://github.com/ozalpslan/HousePricingPredict"
-    },
-    {
-        "name": "☁️ AWS Cloud Practitioner Project (Placeholder)",
-        "description": "Designed and implemented a basic cloud solution on AWS, demonstrating foundational knowledge of AWS services like EC2, S3, and VPC. Focused on cost-effective and scalable architecture principles.",
-        "technologies": ["AWS", "Cloud Computing", "EC2", "S3", "VPC"],
-        "github_link": "#"
     }
+   
 ]
 
 for project in project_data:
