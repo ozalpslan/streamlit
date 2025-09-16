@@ -1,4 +1,3 @@
-
 import streamlit as st
 import base64
 
@@ -171,6 +170,18 @@ st.markdown('<h2 class="section-header">🚀 Featured Projects</h2>', unsafe_all
 
 project_data = [
     {
+        "name": "🚗 Arabam.com Car Listings – Machine Learning Price Predict",
+        "description": "Scraped large-scale second-hand car listings from arabam.com to build a custom dataset. Performed data cleaning, preprocessing, and feature engineering (encoding categorical variables, handling missing values, scaling). Applied PyCaret to benchmark multiple regression algorithms (Linear Regression, Random Forest, XGBoost, LightGBM, etc.). Conducted hyperparameter tuning and model comparison to select the best-performing algorithm. Built and optimized a machine learning pipeline for car price prediction. Designed an interactive web application with Streamlit for deployment (currently on hold due to technical issues).",
+        "technologies": ["Machine Learning", "Web Scraping", "Data Preprocessing", "PyCaret", "XGBoost", "LightGBM", "Streamlit"],
+        "github_link": "#"
+    },
+    {
+        "name": "🎙️ Voice Recording & Transcription System using LLMs",
+        "description": "Developed a Python system that automatically processes voice recordings, performing high-accuracy transcription in Turkish with mixed English words using Whisper-medium. Generated summaries of the transcribed text with BART large model. Interacted with Google Drive: colab gets audio files from a Drive folder, processes them, and deletes processed files automatically. Efficient model caching: models are downloaded only once and reused in subsequent runs. Initially planned AWS integration for cloud storage and processing, but switched to Google Drive for cost efficiency. Provides a fully automated workflow: detects audio files, transcribes, summarizes, saves notes, and cleans up.",
+        "technologies": ["Python", "PyTorch", "Transformers", "Whisper", "BART", "Google Colab", "Google Drive API"],
+        "github_link": "#"
+    },
+    {
         "name": "🏭 Yildiz Technical University ML Datathon 2025",
         "description": "Built a machine learning model using real factory machine data to predict maintenance needs and failures. Applied data preprocessing, feature engineering, and model evaluation techniques to improve prediction accuracy.",
         "technologies": ["Machine Learning", "Data Preprocessing", "Feature Engineering", "Predictive Maintenance"],
@@ -317,3 +328,4 @@ st.markdown("""
     <p>🐙 <strong>GitHub:</strong> <a href="https://github.com/ozalpslan" target="_blank" style="color: white;">github.com/ozalpslan</a></p>
 </div>
 """, unsafe_allow_html=True)
+
